@@ -1,0 +1,14 @@
+[
+  {
+    "title": "E-commerce",
+    "description": "Tienda online con  wordpress y woocommerce",
+    "image": "/assets/logoBonita.png",
+    "url": "https://glowmakeup.vidriospelaez.com.co/"
+  },
+  {
+    "title": "juego del ahorcado",
+    "description": "juego del ahorcado desarrollado con php, html, css y js",
+    "image": "/assets/SalvaConocieminto.png",
+    "url": "https://ahorcadosena.adsocartago.com/index.php"
+  }
+]
