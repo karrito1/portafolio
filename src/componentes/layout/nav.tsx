@@ -17,6 +17,9 @@ const Navbar = () => {
         <li>
           <a href="#contacto">Contáctame</a>
         </li>
+        <li>
+          <a href="#historia">Historia</a>
+        </li>
       </ul>
     </nav>
   );

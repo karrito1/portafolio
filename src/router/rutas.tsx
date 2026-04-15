@@ -3,25 +3,29 @@ import Navbar from "../componentes/layout/nav";
 import Footer from "../componentes/layout/footer";
 import Proyectos from "../componentes/layout/proyectos";
 import Contacto from "../componentes/layout/contactame";
+import ContenidoExtra from "../componentes/layout/historia";
 
 const Rutas = () => {
   return (
-    <>
-      {/*layout*/}
-      <Navbar></Navbar>
-      <Header></Header>
-      <Proyectos></Proyectos>
-      <Contacto></Contacto>
+    <div className="w-full overflow-x-hidden">
+      {/* NAVBAR */}
+      <Navbar />
 
-      {/*constendio del sitio*/}
+      {/* HEADER */}
+      <Header />
 
-      <section className="flex flex-row flex-wrap h-lvh p-2">
-        <article className="flex flex-wrap flex-col basis-3/4 "></article>
-      </section>
-      <Footer></Footer>
+      {/* PROYECTOS */}
+      <Proyectos />
 
-      {/*constendio del sitio */}
-    </>
+      {/* CONTACTO */}
+      <Contacto />
+
+      {/* CONTENIDO EXTRA */}
+      <ContenidoExtra />
+
+      {/* FOOTER */}
+      <Footer />
+    </div>
   );
 };
 

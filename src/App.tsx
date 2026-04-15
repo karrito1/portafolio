@@ -4,9 +4,7 @@ import Rutas from "./router/rutas";
 function App() {
   return (
     <div className="App">
-      <Rutas>
-      </Rutas>
-  
+      <Rutas></Rutas>
     </div>
   );
 }
