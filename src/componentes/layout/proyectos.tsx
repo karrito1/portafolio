@@ -9,33 +9,40 @@ const imageMap: Record<string, string> = {
 
 const Proyectos = () => {
   return (
-    <>
-      <section id="proyectos" className="p-10 bg-gray-100 text-center">
-        <h2 className="text-3xl font-bold mb-6">Proyectos</h2>
+    <section id="proyectos" className="p-10 bg-gray-100 text-center">
+      <h2 className="text-3xl font-bold mb-8">Proyectos</h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {proyectos.map((proyecto, index) => (
-            <div key={index} className="bg-white p-4 rounded shadow">
-              <img
-                src={imageMap[proyecto.image] ?? proyecto.image}
-                alt={proyecto.title}
-                className="w-full mb-3 rounded"
-              />
-              <h3 className="font-bold text-xl">{proyecto.title}</h3>
-              <p className="text-gray-600">{proyecto.description}</p>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {proyectos.map((proyecto, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300"
+          >
+            <img
+              src={imageMap[proyecto.image] ?? proyecto.image}
+              alt={proyecto.title}
+              className="w-full h-36 object-cover hover:scale-105 transition duration-300"
+            />
+
+            <div className="p-4">
+              <h3 className="font-bold text-xl mb-2">{proyecto.title}</h3>
+              <p className="text-gray-600 text-sm mb-3">
+                {proyecto.description}
+              </p>
+
               <a
                 href={proyecto.url}
                 target="_blank"
                 rel="noreferrer"
-                className="text-blue-500 inline-block mt-2"
+                className="inline-block text-white bg-blue-500 px-4 py-2 rounded-md text-sm hover:bg-blue-600 transition"
               >
                 Ver Proyecto
               </a>
             </div>
-          ))}
-        </div>
-      </section>
-    </>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
