@@ -16,17 +16,23 @@ const Proyectos = () => {
         {proyectos.map((proyecto, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl w-full shadow-md overflow-hidden hover:shadow-xl transition duration-300"
+            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300"
           >
-            <img
-              src={imageMap[proyecto.image] ?? proyecto.image}
-              alt={proyecto.title}
-              className="w-full h-36 object-cover hover:scale-105 transition duration-300"
-            />
+            {/* Imagen sin recorte */}
+            <div className="bg-gray-50 flex items-center justify-center p-3">
+              <img
+                src={imageMap[proyecto.image] ?? proyecto.image}
+                alt={proyecto.title}
+                className="w-full h-36 object-contain transition-transform duration-300 hover:scale-105"
+              />
+            </div>
 
             <div className="p-4">
-              <h3 className="font-bold text-xl mb-2">{proyecto.title}</h3>
-              <p className="text-gray-600 text-sm mb-3">
+              <h3 className="font-bold text-xl mb-2">
+                {proyecto.title}
+              </h3>
+
+              <p className="text-gray-600 text-sm mb-4">
                 {proyecto.description}
               </p>
 
