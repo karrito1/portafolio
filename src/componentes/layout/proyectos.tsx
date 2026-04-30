@@ -16,7 +16,7 @@ const Proyectos = () => {
         {proyectos.map((proyecto, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300"
+            className="bg-white rounded-xl w-full shadow-md overflow-hidden hover:shadow-xl transition duration-300"
           >
             <img
               src={imageMap[proyecto.image] ?? proyecto.image}
