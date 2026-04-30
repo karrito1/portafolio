@@ -5,7 +5,7 @@ const Contacto = () => {
 
       <div className="flex flex-col gap-4">
         <a
-          href="https://github.com/?locale=es-419"
+          href="https://github.com/karrito1"
           target="_blank"
           className="hover:text-gray-300"
         >
